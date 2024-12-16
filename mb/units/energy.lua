@@ -7,7 +7,7 @@ local Time = require "mb.units.time"
 --- Energy units.
 local Energy = Type.new()
 
-Energy:register_base(Unit.BASE ~ "FE") -- Define Forge Energy as a base unit.
+Energy:register_base(Unit.BASE .. "FE") -- Define Forge Energy as a base unit.
 Energy:register(Energy["FE"] .. "RF") -- Red Flux.
 Energy:register(Energy["FE"] * 2.5 .. "J") -- Mekanism joule.
 Energy:register(Energy["FE"] * 0.25 .. "EU") -- Energy Unit.
